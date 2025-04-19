@@ -16,33 +16,33 @@ In this example, we have a DocumentRegistry class that holds prototypes for PdfD
 ## Classes
 - **`Document` Interface (`Cloneable`)**
     This is the common interface for all document types. It defines methods to:
-        - clone(): To create a new clone of the document.
-        - open(): To open and display document details.
-        - getType(): To get the document type.
+  - clone(): To create a new clone of the document.
+  - open(): To open and display document details.
+  - getType(): To get the document type.
 
 - **PdfDocument**
     A concrete class that implements Document, representing a PDF document with:
-        - File name
-        - Author
-        - Page count
-        - Name of the document
+  - File name
+  - Author
+  - Page count
+  - Name of the document
 
 - **TextDocument**
     A concrete class that implements Document, representing a text document with:
-        - File path
-        - Encoding type
-        - Word count
+  - File path
+  - Encoding type
+  - Word count
 
 - **SpreadsheetDocument**
     A concrete class that implements Document, representing a spreadsheet document with:
-        - Speadsheet name
-        - Row count
-        - Column count
+  - Speadsheet name
+  - Row count
+  - Column count
 
 - **DocumentRegistry**
     This class manages the prototypes for each document type (PdfDocument, TextDocument, and SpreadsheetDocument). It allows clients to:
-        - Create document prototypes.
-        - Clone prototypes and create custom documents.
+  - Create document prototypes.
+  - Clone prototypes and create custom documents.
 
 - **`ProcessedDocument` Test Class**
     The main driver class. It demonstrates how the DocumentRegistry class is used to create document prototypes, clone them, and open and display their details.
