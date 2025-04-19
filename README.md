@@ -47,5 +47,5 @@ In this example, we have a DocumentRegistry class that holds prototypes for PdfD
 - **`ProcessedDocument` Test Class**
     The main driver class. It demonstrates how the DocumentRegistry class is used to create document prototypes, clone them, and open and display their details.
 
-UML Class Diagram of Document Registry (Prototype Design):
+## UML Class Diagram of Document Registry (Prototype Design):
 ![alt text](image.png)
